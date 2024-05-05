@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <title>My Giro</title>
+</head>
+
+<body>
+  <!-- вверхняя панель -->
+  <a id="top"></a>
+  <nav>
+    <div class="nav__logo">
+      <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+    </div>
+    <button class="btn__call">
+      <img class="call__image" src="img/call.svg" alt="">
+      <div class="call_container">
+        <div class="nav__number">+7(966)444-12-20</div>
+        <div class="nav__text">заказать звонок</div>
+      </div>
+    </button>
+  </nav>
+  <!-- картинка с текстом -->
+  <header>
+    <h1>Добро пожаловать в <p>My-Giro</p>
+    </h1>
+    <p>место где технология встречает удобство и стиль! У нас вы найдете широкий выбор высококачественных электрических
+      транспортных средств, способных сделать вашу ежедневную жизнь более удобной и экологически чистой. Наши
+      электросамокаты и гироскутеры сочетают в себе инновационные технологии и стильный дизайн, обеспечивая комфортное и
+      безопасное передвижение как в городской суете, так и за ее пределами. Будьте в центре внимания, экономьте время и
+      силы, выбирая удобное и экологически чистое средство передвижения.</p>
+  </header>
+  <!-- карусель -->
+  <section>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active my_carousel-item">
+          <h1>Гироскутеры</h1>
+          <p>Гироскутеры, или самобалансирующиеся электрические скейты, представляют собой компактные устройства с двумя
+            колесами, которые управляются за счет перемещения веса тела. Они отличаются простотой управления и
+            маневренностью, что делает их популярным выбором для кратких поездок в городе.</p>
+        </div>
+        <div class="carousel-item my_carousel-item">
+          <h1>Электросамокаты</h1>
+          <p>Электросамокаты представляют собой удобное средство передвижения, оснащенное электродвигателем и
+            аккумулятором. Они обеспечивают более высокую скорость и дальность по сравнению с гироскутерами и подходят
+            для более длительных поездок по городу.
+          </p>
+        </div>
+        <div class="carousel-item my_carousel-item">
+          <h1>Сигвеи</h1>
+          <p> Сигвеи, или сегвеи, представляют собой устройства с двумя колесами, которые позволяют передвигаться,
+            сдвигая вес тела вперед или назад. Они обладают высокой устойчивостью и могут достигать небольших скоростей,
+            что делает их отличным выбором для катания как в городе, так и за его пределами.</p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- товары -->
+  <section class="shop">
+    <h1>Наши товары</h1>
+    <p>фильтры</p>
+    <input type="checkbox" checked name="all" id="all" class="all">
+    <label for="all" class="all">Всё</label>
+    <input type="checkbox" checked name="samocat" id="samocat">
+    <label for="samocat">Самокаты</label>
+    <input type="checkbox" checked name="giro" id="giro">
+    <label for="giro">Гироскутеры</label>
+    <input type="checkbox" checked name="giro" id="sigvey">
+    <label for="sigvey">Сингвеи</label>
+    <div class="my-rows">
+      <div class="my-row">
+        <div class="shop_card samocat shop_item">
+          <div class="shop_card_inner ">
+            <img src="img/samocat1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card_info">
+                <h5 class="card_title">Электросамокат Midway Yamato - 0810 Черный</h5>
+                <h5>23 999 руб.</h5>
+              </div>
+              <a href="#" class="btn shop_btn">купить</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop_card samocat shop_item">
+          <div class="shop_card_inner">
+            <img src="img/samocat2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card_info">
+                <h5 class="card_title">Электросамокат Halten Lite Plus</h5>
+                <h5>49 999 руб.</h5>
+              </div>
+              <a href="#" class="btn shop_btn">купить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-row">
+        <div class="shop_card giro shop_item">
+          <div class="shop_card_inner">
+            <img src="img/giro1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card_info">
+                <h5 class="card_title">Гироскутер 10.5 дюймов Jilong (Оригинал)</h5>
+                <h5>14 999 руб.</h5>
+              </div>
+              <a href="#" class="btn shop_btn">купить</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop_card giro shop_item">
+          <div class="shop_card_inner">
+            <img src="img/giro2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card_info">
+                <h5 class="card_title">Гироскутер 8.5" (Transformer)</h5>
+                <h5>12 999 руб.</h5>
+              </div>
+              <a href="#" class="btn shop_btn">купить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-row">
+        <div class="shop_card sigvey shop_item">
+          <div class="shop_card_inner">
+            <img src="img/sig1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card_info">
+                <h5 class="card_title">Сигвей ElectroTown X2</h5>
+                <h5>64 999 руб.</h5>
+              </div>
+              <a href="#" class="btn shop_btn">купить</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop_card sigvey shop_item">
+          <div class="shop_card_inner">
+            <img src="img/sig2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card_info">
+                <h5 class="card_title">Сигвей Ninebot E+</h5>
+                <h5>87 999 руб.</h5>
+              </div>
+              <a href="#" class="btn shop_btn">купить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- консультанты -->
+  <section class="consultants">
+    <h1>Наши консультанты</h1>
+    <div class="consultant">
+      <div class="consultant_landscape">
+        <img src="img/con1.png" alt="consultant">
+        <div class="info">
+          <h2>Вячеслав Морозов</h2>
+          <div class="info_text">
+            <p>Специалист по</p>
+            <p>электросамокатам.</p>
+            <p>Поможет вам выбрать</p>
+            <p>электросамокат вашей мечты.</p>
+          </div>
+          <h2 class="consultant_num_landscape">8 (955) 155 55 55</h2>
+        </div>
+      </div>
+      <h2 class="consultant_num_portrait">8 (955) 155 55 55</h2>
+    </div>
+    <div class="consultant">
+      <div class="consultant_landscape">
+        <img src="img/con2.png" alt="consultant">
+        <div class="info">
+          <h2>Анастасия Шевцова</h2>
+          <div class="info_text">
+            <p>Специалист по</p>
+            <p>сигвеям и гироскутерам.</p>
+            <p>Поможет сделать хороший выбор.</p>
+          </div>
+          <h2 class="consultant_num_landscape">8 (944) 144 44 44</h2>
+        </div>
+      </div>
+      <h2 class="consultant_num_portrait">8 (944) 144 44 44</h2>
+    </div>
+  </section>
+  <!-- партнеры -->
+  <section class="partners">
+    <img src="img/partners.png" alt="partners">
+  </section>
+  <!-- полезная инфа -->
+  <section class="cool_info">
+    <div class="info_card">
+      <div class="info_head">
+        <img src="img/info_card1.png" alt="фото самоката">
+        <h3>Правила ухода за электросамокатом:</h3>
+      </div>
+      <div class="info_body">
+        <p>-ОЧЕНЬ важно, хранить электросамокат в сухом месте.</p>
+        <p>-После каждой поездки очищайте грязь.</p>
+        <p>-Старайтесь не разряжать аккумулятор полностью.</p>
+      </div>
+    </div>
+    <div class="info_card">
+      <div class="info_head">
+        <img src="img/info_card2.png" alt="фото самоката">
+        <h3>Перед каждой поездкой нужно проверять:</h3>
+      </div>
+      <div class="info_body">
+        <p>-Уровень заряда</p>
+        <p>-Тормоза</p>
+        <p>-Надежно ли закреплён складной механизм</p>
+        <p>-Накачаны ли колёса</p>
+        <p>-Прогноз погоды.</p>
+      </div>
+    </div>
+  </section>
+  <!-- рассылка -->
+  <section class="newsletter">
+    <div class="newsletter_text">
+      My-Giro - это компания с 5-летним опытом работы на рынке.
+      За это время мы продали уже более 100 тысяч
+      электросамокатов, сигвеев и гироскутеров.
+    </div>
+    <div>
+      <form class="newsletter_form" method="post">
+        <h3>Подпишитесь на email-рассылку</h3>
+
+        <div class="input-box">
+          <h5>Ваше имя:</h5>
+          <input type="text" required>
+        </div>
+        <div class="input-box">
+          <h5>Ваш адрес эл. почты:</h5>
+          <input type="text" required>
+        </div>
+        <button type="submit">подписаться</button>
+      </form>
+    </div>
+  </section>
+  <!-- отзывы карусель -->
+  <section>
+    <div>
+      <h1 class="feedback-head">Отзывы наших клиентов</h1>
+    </div>
+    <div id="carousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active my_carouselfed-item">
+          <div class="fed-photo"><img src="img/feedback1.png" alt="радостный клиент"></div>
+          <div class="fed-text">
+            <h1>Электросамокат Halten Lite Plus</h1>
+            <img src="img/stars.png" alt="5 звезд">
+            <p>Внук доволен. Очень нравится. Заряда аккумулятора хватает на долго , если не гонять на максимальной
+              скорости.</p>
+          </div>
+        </div>
+        <div class="carousel-item my_carouselfed-item">
+          <div class="fed-photo"><img src="img/feedback2.jpg" alt="радостный клиент"></div>
+          <div class="fed-text">
+            <h1>Электросамокат Halten Lite Plus</h1>
+            <img src="img/stars.png" alt="5 звезд">
+            <p>Приятный, стильный дизайн, очень лаконично всё. Легко управляется, скорость безопасная, тормозит
+              предсказуемо. Мягкий в ходу,я вешу 55кг,мне всё подходит. Очень классная опция - съёмный аккумулятор. Я
+              оставляю его на площадке,а батарею беру домой заряжаться, дома всегда чисто и место не занимает.</p>
+          </div>
+        </div>
+        <div class="carousel-item my_carouselfed-item">
+          <div class="fed-photo"><img src="img/feedback3.jpg" alt="радостный клиент"></div>
+          <div class="fed-text">
+            <h1>Электросамокат Halten Lite Plus</h1>
+            <img src="img/stars.png" alt="5 звезд">
+            <p>Стильный дизайн, высокая мощность и удобное приложение для управления. Мне понравилось, буду
+              рекомендовать знакомым и друзьям</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+</body>
+
+<a href="#top" class="back-to-top">Наверх</a>
+
+</html>
