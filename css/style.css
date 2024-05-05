@@ -1,0 +1,21 @@
+header {
+    background-color: #FFDE69;
+}
+
+.brand_image {
+    width: 40%;
+}
+
+.call_button {
+    background-color: #ffffff;
+}
+
+.phone_image {
+    width: 10%;
+    height: 10%;
+}
+
+.btn-wrapper-end {
+    display: flex;
+    justify-content: flex-end;
+  }

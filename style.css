@@ -1,0 +1,543 @@
+@font-face {
+    font-family: 'pattaya';
+    src: url(/fonts/pattaya.ttf);
+}
+
+@font-face {
+    font-family: 'dudka';
+    src: url(/fonts/Dudka\ Regular.ttf);
+}
+
+body {
+    font-family: dudka;
+    background-color: #8C8C8C;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    background: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* дизайн шапки */
+nav {
+    background-color: #ffde69;
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 15rem;
+    padding-top: 8px;
+}
+
+.btn__call {
+    padding: 20px;
+    width: 25rem;
+    height: 100px;
+    position: relative;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__call:hover {
+    background: linear-gradient(to right, #FFEDAE, #FFEDAE);
+}
+
+.btn__call:focus {
+    background: linear-gradient(to right, #FFEDAE, #DFC567);
+}
+
+.call__image {
+    position: relative;
+    padding-top: 2%;
+    padding-left: 5%;
+    height: 60px;
+}
+
+
+.nav__number {
+    font-size: 35px;
+    font-weight: 543;
+    height: 35px;
+}
+
+.nav__text {
+    font-family: pattaya;
+    font-size: 25px;
+    font-weight: 543;
+}
+
+/* конец дизайна */
+
+/* дизайн заголовка */
+header {
+    background-image:
+        linear-gradient(rgba(70, 70, 70, 0.4),
+            rgba(70, 70, 70, 0.6)),
+        url(img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1024px;
+    color: white;
+    text-align: left;
+    padding: 10%;
+    padding-top: 2%;
+}
+
+header>h1 {
+    padding-bottom: 2%;
+    font-size: 95px;
+
+}
+
+header>p {
+    font-size: 30px;
+}
+
+/* конец дизайна */
+
+/* дизайн карусели */
+.my_carousel-item {
+    background: linear-gradient(#464646, #8C8C8C);
+    height: 700px;
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.my_carousel-item>h1 {
+    font-size: 70px;
+}
+
+/* конец дизайна */
+
+/* дизайн товаров */
+.shop {
+    background-color: #FFDE69;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.shop>p {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.shop>.my-rows {
+    padding: 15%;
+    padding-top: 60px;
+    background-color: #8C8C8C;
+    text-align: left;
+    margin-right: 0;
+}
+
+.my-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop_card {
+    width: 40%;
+    padding-bottom: 15%;
+}
+
+.shop_card_inner {
+    background-color: white;
+    height: 100%;
+}
+
+.card_info {
+    height: 110px;
+}
+
+.card_info>h5 {
+    font-size: 140%;
+}
+
+.card_title {
+    height: 70px;
+}
+
+.shop_btn {
+    background-color: #FFDE69;
+    border-radius: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.shop_btn:hover {
+    background: linear-gradient(to right, #FFDE69, #FFF5D0);
+}
+
+.shop_btn:focus {
+    background: linear-gradient(to right, #FFF5D0, #FFFFFF);
+}
+
+
+/* конец дизайна */
+
+/* Логика фильтрации */
+input#samocat,
+input#giro,
+input#sigvey,
+input#all {
+    display: none;
+}
+
+input#all:not(:checked)+label,
+label {
+    user-select: none;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+input#all:checked+label,
+input:not(:checked)+label {
+    background: #FFF5D0;
+    color: black;
+    box-shadow: none;
+    margin: 5px 3p 1px;
+}
+
+input#all:checked~.my-rows .my-row .shop_item.shop_card {
+    display: block;
+}
+
+input#samocat:checked~.my-rows .my-row .samocat,
+input#giro:checked~.my-rows .my-row .giro,
+input#sigvey:checked~.my-rows .my-row .sigvey {
+    display: none;
+}
+
+/* конец логики */
+
+/* дизайн консультантов */
+
+.consultants {
+    margin: 15%;
+    margin-top: 0%;
+    padding: 3%;
+    background-color: white;
+    text-align: center;
+}
+
+.consultant {
+    background-color: #FFDE69;
+    border-radius: 50px;
+    margin: 3%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    text-align: left;
+}
+
+.consultant_landscape  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.consultant_landscape>img {
+    padding: 5%;
+    width: 40%;
+}
+
+.info>h2 {
+    padding-left: 14%;
+    padding-bottom: 5%;
+}
+
+.info {
+    position: relative;
+    width: 60%;
+}
+
+.info_text {
+    height: 70%;
+    text-align: left;
+    font-size: 200%;
+}
+
+.info_text>p {
+    margin-bottom: 0px;
+}
+
+.consultant_num_portrait {
+    display: none;
+}
+
+/* конец дизайна */
+
+/* фоточка */
+.partners {
+    text-align: center;
+    margin: 15%;
+}
+
+.partners>img {
+    width: 100%;
+}
+
+/* конец фоточки */
+
+/* дизайн крутой инфы */
+.cool_info {
+    margin: 15%;
+    padding: 5%;
+    background-color: #FFDE69;
+    justify-content: space-between;
+    border-radius: 50px;
+    display: flex;
+}
+
+.info_card {
+    padding: 5%;
+    width: 50%;
+}
+
+.info_head>img {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.info_head>h3 {
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    padding: 6%;
+    font-weight: 600;
+    font-size: 170%;
+}
+
+.info_card>div>p {
+    margin-bottom: 0px;
+    font-size: x-large;
+    font-weight: 500;
+    font-size: 170%;
+}
+
+/* конец дизайна инфы */
+
+/* дизайн рассылки */
+.newsletter {
+    position: relative;
+    background-image:
+        linear-gradient(rgba(140, 140, 140, 0.3),
+            rgba(140, 140, 140, 0.3)),
+        url(img/news.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15%;
+    display: table;
+    height: 100%;
+}
+
+.newsletter>div {
+    display: table-cell;
+    width: 49%;
+}
+
+.newsletter_text {
+    background-color: rgba(140, 140, 140, 0.3);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 5%;
+    font-size: 200%;
+}
+
+.input-box {
+    padding-top: 10%;
+}
+
+.input-box>input {
+    width: 100%;
+    background-color: #C8C8C8;
+    border-radius: 50px;
+    padding: 3%;
+    margin-bottom: 3%;
+    border: none;
+    outline: none;
+}
+
+.newsletter_form {
+    background-color: white;
+    padding: 8%;
+}
+
+.newsletter_form>h3 {
+    text-align: center;
+    padding: 5%;
+    background-color: #FFDE69;
+    border-radius: 50px;
+}
+
+.newsletter_form>button {
+    width: 100%;
+    padding: 2%;
+    font-size: 140%;
+    margin-top: 10%;
+    background-color: #FFDE69;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+/* конец дизайна рассылки */
+
+/* дизайн отзывов */
+
+.feedback-head {
+    text-align: center;
+    background-color: #FFDE69;
+    background-origin: content-box;
+    margin: 10%;
+    margin-bottom: 2%;
+    border-radius: 50px;
+}
+
+.my_carouselfed-item.active {
+    display: flex;
+    padding: 10%;
+    padding-top: 0px;
+    justify-content: space-between;
+}
+
+.fed-photo {
+    background-color: white;
+    padding: 3%;
+    width: 40%;
+}
+
+.fed-photo>img {
+    width: 100%;
+}
+
+.fed-text {
+    padding: 3%;
+    background-color: white;
+    width: 60%;
+}
+
+.fed-text>img {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 45%;
+}
+
+.fed-text>p {
+    font-size: 25px;
+}
+
+/* конец дизайна для мониторов */
+
+
+/* дизайн для планшетов */
+@media screen and (orientation: portrait) {
+
+    /* магазин */
+    .my-row {
+        display: block;
+        justify-content: center;
+    }
+    .shop_card {
+        padding: 0%;
+        padding-bottom: 10%;
+        width: 100%;
+    }
+    
+    /* консультанты */
+    .consultant_num_landscape {
+        display: none;
+    }
+    
+    .consultant_num_portrait {
+        display: block;
+        text-align: center;
+    }
+    
+    .info>h2 {
+        padding-left: 0;
+    }
+    
+    .info_text {
+        height: 70%;
+        text-align: left;
+        font-size: 150%;
+    }
+    
+    
+    /* крутая инфа */
+    .info_card {
+        width: 100%;
+        padding-bottom: 7%;
+    }
+    
+    .cool_info {
+        display: block;
+        justify-content: center;
+        padding-bottom: 0%;
+    }
+    
+    .info_head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .info_head>h3 {
+        width: 55%;
+        height: 30%;
+        font-size: 150%;
+        margin-bottom: 0;
+    }
+    
+    .info_head>img {
+        width: 40%;
+        margin-bottom: 0%;
+    }
+    .info_body {
+        padding-top: 4%;
+    }    
+    
+    .info_card>div>p {
+        font-size: x-large;
+    }
+    
+    .newsletter_text {
+        font-size: 140%;
+    }
+    
+}
